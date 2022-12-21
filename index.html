@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <title>Spotify- Web Player</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -22,50 +23,46 @@
         <h1>Welcome to Spotify- 2022</h1>
         <div>
             <div class="songItem">
-                <img src="images/song1.jpg" alt="1">
-                <span>Let me love you</span>
-                <span class="songListPlay"><span class="timeStamp">5:43 <i class="fa-solid fa-play-circle"></i></span></span>
+                <img alt="1">
+                <span class="songName"></span>
+                <span class="songListPlay"><span class="timeStamp">5:43 <i id="0" class="fa-solid songItemPlay fa-play-circle"></i></span></span>
             </div>
             <div class="songItem">
-                <img src="images/song1.jpg" alt="1">
-                <span>Let me love you</span>
-                <span class="songListPlay"><span class="timeStamp">5:43 <i class="fa-solid fa-play-circle"></i></span></span>
+                <img alt="1">
+                <span class="songName"></span>
+                <span class="songListPlay"><span class="timeStamp">5:43 <i id="1" class="fa-solid songItemPlay fa-play-circle"></i></span></span>
             </div>
             <div class="songItem">
-                <img src="images/song1.jpg" alt="1">
-                <span>Let me love you</span>
-                <span class="songListPlay"><span class="timeStamp">5:43 <i class="fa-solid fa-play-circle"></i></span></span>
+                <img alt="1">
+                <span class="songName"></span>
+                <span class="songListPlay"><span class="timeStamp">5:43 <i id="2" class="fa-solid songItemPlay fa-play-circle"></i></span></span>
             </div>
             <div class="songItem">
-                <img src="images/song1.jpg" alt="1">
-                <span>Let me love you</span>
-                <span class="songListPlay"><span class="timeStamp">5:43 <i class="fa-solid fa-play-circle"></i></span></span>
+                <img alt="1">
+                <span class="songName"></span>
+                <span class="songListPlay"><span class="timeStamp">5:43 <i id="3" class="fa-solid songItemPlay fa-play-circle"></i></span></span>
             </div>
             <div class="songItem">
-                <img src="images/song1.jpg" alt="1">
-                <span>Let me love you</span>
-                <span class="songListPlay"><span class="timeStamp">5:43 <i class="fa-solid fa-play-circle"></i></span></span>
+                <img alt="1">
+                <span class="songName"></span>
+                <span class="songListPlay"><span class="timeStamp">5:43 <i id="4" class="fa-solid songItemPlay fa-play-circle"></i></span></span>
             </div>
-            <div class="songItem">
-                <img src="images/song1.jpg" alt="1">
-                <span>Let me love you</span>
-                <span class="songListPlay"><span class="timeStamp">5:43 <i class="fa-solid fa-play-circle"></i></span></span>
-            </div>
+            
         </div>
         <div class="songBanner">
 
         </div>
     </div>
     <div class="bottom">
-        <input type="range" name="range" id="myProgressBar" min="0" max="100">
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
         <div class="icons">
             <!-- Font Awesome Icons -->
-            <i class="fa-solid fa-3x fa-step-backward"></i>
-            <i class="fa-solid fa-3x fa-play-circle"></i>
-            <i class="fa-solid fa-3x fa-step-forward"></i>
+            <i id="previous" class="fa-solid fa-3x fa-step-backward"></i>
+            <i class="fa-solid fa-3x fa-play-circle" id="masterPlay"></i>
+            <i id="next" class="fa-solid fa-3x fa-step-forward"></i>
         </div>
         <div class="songInfo">
-            <img src="images/music.gif" width="40px" alt="">Let me love you- Justin Beiber
+            <img src="images/music.gif" width="40px" alt="" id="gif"> <span id="masterSongName"></span>
         </div>
     </div>
 
