@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+body {
+    background-image: linear-gradient(to right, #000102, #000409, #000610, #010815, #030a19);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    font-family: 'Kanit', sans-serif;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    height: 67px;
+    background-color: black;
+    color: white;
+    align-items: center;
+}
+
+nav ul li {
+    padding: 0px 12px;
+}
+
+nav ul li i {
+    margin-right: 5px;
+}
+
+.brand {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+}
+
+.brand img {
+    margin-right: 5px;
+    width: 49px;
+}
+
+.container {
+    min-height: 60vh;
+    background-color: black;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    display: flex;
+    margin: 20px auto;
+    width: 70%;
+    border-radius: 10px;
+    padding: 30px;
+    bottom: 0;
+    background-image: url(images/bg.jpg);
+    background-size: contain;
+    flex-direction: column;
+}
+
+.songItem {
+    height: 50px;
+    display: flex;
+    background-color: white;
+    width: 40%;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.songItem img {
+    width: 48px;
+    margin: 0 12px;
+    border-radius: 20px;
+}
+
+.timeStamp {
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.bottom {
+    position: sticky;
+    height: 80px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.icons {
+    margin-top: 15px;
+}
+
+.icons i {
+    cursor: pointer;
+}
+
+#myProgressBar {
+    width: 80vw;
+}
+
+.songInfo {
+    position: absolute;
+    left: 10vw;
+}
+
+.songInfo img {
+    opacity: 0;
+    transition: 1s ease-in;
+}
