@@ -2,4 +2,4 @@
 
 Deployed Site (Netlify):
 
-https://graceful-bubblegum-599fa2.netlify.app/
+https://spotifycloneapp1.netlify.app/
